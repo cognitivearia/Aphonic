@@ -16,8 +16,16 @@ let maps = [];
 let current = null;
 let hotspots = null;
 
+/** Resolve public assets for both local `/` and GitHub project Pages `/Aphonic/`. */
+function assetUrl(path) {
+  const clean = String(path).replace(/^\/+/, "");
+  const base = import.meta.env.BASE_URL || "./";
+  return new URL(clean, new URL(base, window.location.href)).toString();
+}
+
 async function loadRooms() {
-  const res = await fetch("/assets/rooms.json");
+  const res = await fetch(assetUrl("assets/rooms.json"));
+  if (!res.ok) throw new Error(`rooms.json ${res.status}`);
   const data = await res.json();
   rooms = data.rooms;
   roomsEl.innerHTML = "";
@@ -40,7 +48,8 @@ async function selectRoom(roomId, mapOverride) {
   roomsEl.querySelectorAll("button").forEach((b) => {
     b.classList.toggle("active", b.dataset.id === currentRoom.id);
   });
-  const res = await fetch(`/assets/${currentRoom.variantsFile}`);
+  const res = await fetch(assetUrl(`assets/${currentRoom.variantsFile}`));
+  if (!res.ok) throw new Error(`${currentRoom.variantsFile} ${res.status}`);
   const data = await res.json();
   maps = data.maps;
   variantsEl.innerHTML = "";
@@ -65,12 +74,15 @@ async function selectMap(id) {
   panelTitle.textContent = current.title;
   blurb.textContent = current.blurb;
   subtitle.textContent = `${currentRoom.title} — ${current.blurb}`;
-  const hotRes = await fetch(`/assets/${current.file}-hotspots.json`);
+  const hotRes = await fetch(assetUrl(`assets/${current.file}-hotspots.json`));
+  if (!hotRes.ok) throw new Error(`hotspots ${hotRes.status}`);
   hotspots = await hotRes.json();
   if (hotspots.blurb) blurb.textContent = hotspots.blurb;
-  map.src = showAnnotated.checked
-    ? `/assets/${current.file}-annotated.png`
-    : `/assets/${current.file}.png`;
+  map.src = assetUrl(
+    showAnnotated.checked
+      ? `assets/${current.file}-annotated.png`
+      : `assets/${current.file}.png`,
+  );
   buildHotspots();
   history.replaceState(
     null,
@@ -126,10 +138,15 @@ showLabels.addEventListener("change", () => {
 });
 showAnnotated.addEventListener("change", () => {
   if (!current) return;
-  map.src = showAnnotated.checked
-    ? `/assets/${current.file}-annotated.png`
-    : `/assets/${current.file}.png`;
+  map.src = assetUrl(
+    showAnnotated.checked
+      ? `assets/${current.file}-annotated.png`
+      : `assets/${current.file}.png`,
+  );
 });
 zoom.addEventListener("input", applyZoom);
 
-loadRooms();
+loadRooms().catch((err) => {
+  console.error(err);
+  if (blurb) blurb.textContent = `Error cargando mockups: ${err.message}`;
+});
