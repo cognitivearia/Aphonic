@@ -1,0 +1,16 @@
+{
+  "name": "aphonic-mockup-viewer",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "sync-assets": "node scripts/sync-assets.mjs",
+    "dev": "vite --host 0.0.0.0 --port 3847",
+    "prebuild": "npm run sync-assets",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3847"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

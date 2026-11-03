@@ -1,0 +1,12 @@
+{
+  "chosen": "oficina",
+  "maps": [
+    {
+      "id": "oficina",
+      "file": "oficina-sala4",
+      "title": "Oficina — Base",
+      "blurb": "Pasillo militar central, mujer mayor, BG follower, Sello 3.",
+      "status": "base"
+    }
+  ]
+}

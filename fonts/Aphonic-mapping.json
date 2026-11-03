@@ -1,0 +1,8 @@
+{
+  "fontFamily": "Aphonic",
+  "version": "5.100",
+  "file": "Aphonic-Regular.ttf",
+  "scriptType": "abstract angular alien unicase",
+  "aesthetic": "No eyes. Wedges/shards/clusters. Extra pass to break M/S/U/V/X/Z/Q Latin silhouettes.",
+  "rebuild": "python3 fonts/build_aphonic.py"
+}

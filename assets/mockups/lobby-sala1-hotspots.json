@@ -1,0 +1,64 @@
+{
+  "tile": 32,
+  "map_w": 22,
+  "map_h": 15,
+  "blurb": "Cola en U, BG a la izquierda, puerta centrada.",
+  "entities": [
+    {
+      "id": "spawn",
+      "label": "Spawn jugador",
+      "x": 11,
+      "y": 13,
+      "kind": "spawn"
+    },
+    {
+      "id": "bg",
+      "label": "BGJAO#%5 — enseña gesto",
+      "x": 4,
+      "y": 6,
+      "kind": "npc"
+    },
+    {
+      "id": "guard",
+      "label": "Guardia — Sello 1 / FATAL #1",
+      "x": 12,
+      "y": 2,
+      "kind": "npc"
+    },
+    {
+      "id": "flavor_a",
+      "label": "Flavor A — lárgate",
+      "x": 3,
+      "y": 10,
+      "kind": "npc"
+    },
+    {
+      "id": "flavor_b",
+      "label": "Flavor B — lárgate",
+      "x": 18,
+      "y": 10,
+      "kind": "npc"
+    },
+    {
+      "id": "art_a",
+      "label": "Artefacto A (inútil)",
+      "x": 3,
+      "y": 8,
+      "kind": "item"
+    },
+    {
+      "id": "art_b",
+      "label": "Artefacto B (sagrado Sala 2)",
+      "x": 19,
+      "y": 8,
+      "kind": "item"
+    },
+    {
+      "id": "door",
+      "label": "Puerta → Sala 2 (tras Sello 1)",
+      "x": 11,
+      "y": 1,
+      "kind": "door"
+    }
+  ]
+}

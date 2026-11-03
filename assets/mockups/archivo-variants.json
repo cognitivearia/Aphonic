@@ -1,0 +1,12 @@
+{
+  "chosen": "archivo",
+  "maps": [
+    {
+      "id": "archivo",
+      "file": "archivo-sala3",
+      "title": "Archivo — Base",
+      "blurb": "Mostrador en la entrada: auto-talk al entrar/salir; 3 estanterías / 4 libros; atajo comida.",
+      "status": "base"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "chosen": "buffet",
+  "maps": [
+    {
+      "id": "buffet",
+      "file": "buffet-sala2",
+      "title": "Buffet — Base",
+      "blurb": "Buffet dominante; copiar rito de BG; sello doble; no tocar comensales.",
+      "status": "base"
+    }
+  ]
+}

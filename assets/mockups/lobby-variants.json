@@ -1,0 +1,26 @@
+{
+  "chosen": "A",
+  "maps": [
+    {
+      "id": "A",
+      "file": "lobby-sala1",
+      "title": "A — Base elegida",
+      "blurb": "Layout canónico del Lobby: cola en U, BG izquierda, puerta centrada.",
+      "status": "base"
+    },
+    {
+      "id": "B",
+      "file": "lobby-sala1-B",
+      "title": "B — Cola S (archivo)",
+      "blurb": "Serpentina, BG en isla, puerta asimétrica, Art B lejos. Referencia descartada.",
+      "status": "archive"
+    },
+    {
+      "id": "C",
+      "file": "lobby-sala1-C",
+      "title": "C — Plaza (archivo)",
+      "blurb": "Espacio abierto, BG cerca del spawn, altares simétricos. Referencia descartada.",
+      "status": "archive"
+    }
+  ]
+}

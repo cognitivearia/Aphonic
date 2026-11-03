@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mockups Aphonic</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top">
+        <p class="brand">APHONIC</p>
+        <h1>Mockups de salas</h1>
+        <p class="sub" id="subtitle">Lobby · Buffet · Archivo · Oficina</p>
+        <p class="docs">
+          Docs en el repo:
+          <a href="https://github.com/" id="repoLink" hidden>GitHub</a>
+          <span id="docsHint">GDD.md · ONEPAGER.md · fonts/</span>
+        </p>
+      </header>
+
+      <div class="variants" id="rooms" role="tablist" aria-label="Salas"></div>
+      <div class="variants" id="variants" role="tablist" aria-label="Variantes"></div>
+
+      <main class="stage">
+        <div class="viewport" id="viewport">
+          <img id="map" alt="Mockup de sala" width="768" height="512" draggable="false" />
+          <div id="hotspots" class="hotspots"></div>
+        </div>
+
+        <aside class="panel">
+          <h2 id="panelTitle">Revisión</h2>
+          <p id="blurb"></p>
+          <p id="hover">Pasa el cursor sobre un punto marcado.</p>
+          <div class="toggles">
+            <label><input type="checkbox" id="showLabels" checked /> Etiquetas</label>
+            <label><input type="checkbox" id="showAnnotated" /> Vista anotada</label>
+            <label>Zoom <input type="range" id="zoom" min="1" max="4" step="0.5" value="2" /></label>
+          </div>
+          <p class="note">
+            Siluetas NPC = placeholders. Pack aduana 32×32.
+          </p>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

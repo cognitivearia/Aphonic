@@ -1,0 +1,71 @@
+{
+  "tile": 32,
+  "map_w": 24,
+  "map_h": 18,
+  "blurb": "Militares en pasillo central estrecho hacia el mostrador; BG sigue; espejo = Sello 3.",
+  "entities": [
+    {
+      "id": "spawn",
+      "label": "Entrada (desde Archivo)",
+      "x": 11,
+      "y": 16,
+      "kind": "spawn"
+    },
+    {
+      "id": "player",
+      "label": "Jugador",
+      "x": 11,
+      "y": 15,
+      "kind": "spawn"
+    },
+    {
+      "id": "bg",
+      "label": "BGJAO#%5 — sigue al jugador; demuestra gestos",
+      "x": 12,
+      "y": 15,
+      "kind": "npc"
+    },
+    {
+      "id": "elder",
+      "label": "Mujer mayor — única interacción; Sello 3",
+      "x": 12,
+      "y": 2,
+      "kind": "npc"
+    },
+    {
+      "id": "desk",
+      "label": "Mostrador autoridad — rito / Sello 3",
+      "x": 11,
+      "y": 2,
+      "kind": "item"
+    },
+    {
+      "id": "book",
+      "label": "Libro protocolo (del Archivo)",
+      "x": 12,
+      "y": 8,
+      "kind": "item"
+    },
+    {
+      "id": "mil_l",
+      "label": "Fila militar izquierda — pasillo",
+      "x": 9,
+      "y": 10,
+      "kind": "npc"
+    },
+    {
+      "id": "mil_r",
+      "label": "Fila militar derecha — pasillo",
+      "x": 14,
+      "y": 10,
+      "kind": "npc"
+    },
+    {
+      "id": "exit",
+      "label": "Salida de aduana → entran al país (corte cálido)",
+      "x": 11,
+      "y": 1,
+      "kind": "door"
+    }
+  ]
+}

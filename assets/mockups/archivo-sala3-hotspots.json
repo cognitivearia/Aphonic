@@ -1,0 +1,99 @@
+{
+  "tile": 32,
+  "map_w": 26,
+  "map_h": 16,
+  "blurb": "Bibliotecario en mostrador de la entrada: auto-habla al entrar y al salir. Puzzle 3/4 + umbral.",
+  "entities": [
+    {
+      "id": "spawn",
+      "label": "Spawn (desde Buffet)",
+      "x": 7,
+      "y": 14,
+      "kind": "spawn"
+    },
+    {
+      "id": "desk",
+      "label": "Mostrador del bibliotecario (junto a la entrada)",
+      "x": 4,
+      "y": 13,
+      "kind": "item"
+    },
+    {
+      "id": "trigger",
+      "label": "Zona auto-talk — interactúa al entrar y al salir",
+      "x": 7,
+      "y": 13,
+      "kind": "door"
+    },
+    {
+      "id": "librarian",
+      "label": "Bibliotecario — intercepta entrada/salida; 1 libro; exige orden",
+      "x": 5,
+      "y": 12,
+      "kind": "npc"
+    },
+    {
+      "id": "bg",
+      "label": "BGJAO#%5 — solo pistas verbales Aphonic",
+      "x": 3,
+      "y": 9,
+      "kind": "npc"
+    },
+    {
+      "id": "shelf_a",
+      "label": "Estantería A (matching)",
+      "x": 2,
+      "y": 4,
+      "kind": "item"
+    },
+    {
+      "id": "shelf_b",
+      "label": "Estantería B (matching)",
+      "x": 7,
+      "y": 3,
+      "kind": "item"
+    },
+    {
+      "id": "shelf_c",
+      "label": "Estantería C (matching)",
+      "x": 12,
+      "y": 3,
+      "kind": "item"
+    },
+    {
+      "id": "book_ok",
+      "label": "Libro correcto (sobrante) — pasa con BG",
+      "x": 8,
+      "y": 8,
+      "kind": "item"
+    },
+    {
+      "id": "door_inner",
+      "label": "Paso archivo → umbral (sale → re-chequeo biblio)",
+      "x": 16,
+      "y": 7,
+      "kind": "door"
+    },
+    {
+      "id": "guard",
+      "label": "Guardia — libro+BG o atajo comida solo",
+      "x": 22,
+      "y": 2,
+      "kind": "npc"
+    },
+    {
+      "id": "food",
+      "label": "Atajo comida — pasas SIN BG (final malo)",
+      "x": 19,
+      "y": 3,
+      "kind": "item"
+    },
+    {
+      "id": "door",
+      "label": "Puerta → Sala 4",
+      "x": 21,
+      "y": 1,
+      "kind": "door"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "tile": 32,
+  "map_w": 24,
+  "map_h": 16,
+  "blurb": "Buffet dominante; copiar rito de BG; sello doble con guardia; no interrumpir comensales.",
+  "entities": [
+    {
+      "id": "spawn",
+      "label": "Spawn (desde Lobby)",
+      "x": 11,
+      "y": 14,
+      "kind": "spawn"
+    },
+    {
+      "id": "bg",
+      "label": "BGJAO#%5 — demuestra ofrenda→comida→asiento",
+      "x": 6,
+      "y": 7,
+      "kind": "npc"
+    },
+    {
+      "id": "server",
+      "label": "Servidor/a — recibe ofrenda, da comida",
+      "x": 8,
+      "y": 4,
+      "kind": "npc"
+    },
+    {
+      "id": "diner1",
+      "label": "Comensal — interrumpir = reset suave",
+      "x": 3,
+      "y": 9,
+      "kind": "npc"
+    },
+    {
+      "id": "diner2",
+      "label": "Comensal — interrumpir = reset suave",
+      "x": 9,
+      "y": 8,
+      "kind": "npc"
+    },
+    {
+      "id": "diner3",
+      "label": "Comensal / culto — interrumpir = reset suave",
+      "x": 14,
+      "y": 8,
+      "kind": "npc"
+    },
+    {
+      "id": "seat",
+      "label": "Asiento del rito (tras ofrenda)",
+      "x": 12,
+      "y": 11,
+      "kind": "item"
+    },
+    {
+      "id": "guard",
+      "label": "Guardia S2 — sello doble solo con BG",
+      "x": 18,
+      "y": 2,
+      "kind": "npc"
+    },
+    {
+      "id": "bg_slot",
+      "label": "Slot BG para interacción simultánea",
+      "x": 16,
+      "y": 3,
+      "kind": "npc"
+    },
+    {
+      "id": "food",
+      "label": "Ítem comida (tras pasar, re-entrada)",
+      "x": 9,
+      "y": 5,
+      "kind": "item"
+    },
+    {
+      "id": "door",
+      "label": "Puerta → Sala 3 (tras sello doble)",
+      "x": 17,
+      "y": 1,
+      "kind": "door"
+    }
+  ]
+}

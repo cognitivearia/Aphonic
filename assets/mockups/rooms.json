@@ -1,0 +1,28 @@
+{
+  "rooms": [
+    {
+      "id": "lobby",
+      "title": "Sala 1 · Lobby",
+      "defaultMap": "A",
+      "variantsFile": "lobby-variants.json"
+    },
+    {
+      "id": "buffet",
+      "title": "Sala 2 · Buffet",
+      "defaultMap": "buffet",
+      "variantsFile": "buffet-variants.json"
+    },
+    {
+      "id": "archivo",
+      "title": "Sala 3 · Archivo",
+      "defaultMap": "archivo",
+      "variantsFile": "archivo-variants.json"
+    },
+    {
+      "id": "oficina",
+      "title": "Sala 4 · Oficina",
+      "defaultMap": "oficina",
+      "variantsFile": "oficina-variants.json"
+    }
+  ]
+}

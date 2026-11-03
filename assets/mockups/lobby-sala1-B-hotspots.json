@@ -1,0 +1,64 @@
+{
+  "tile": 32,
+  "map_w": 24,
+  "map_h": 16,
+  "blurb": "Cola serpenteante en S; BG en isla; puerta asimétrica; Art B exige explorar la derecha.",
+  "entities": [
+    {
+      "id": "spawn",
+      "label": "Spawn jugador",
+      "x": 11,
+      "y": 14,
+      "kind": "spawn"
+    },
+    {
+      "id": "bg",
+      "label": "BGJAO#%5 — enseña gesto",
+      "x": 3,
+      "y": 8,
+      "kind": "npc"
+    },
+    {
+      "id": "guard",
+      "label": "Guardia — Sello 1 / FATAL #1",
+      "x": 10,
+      "y": 2,
+      "kind": "npc"
+    },
+    {
+      "id": "flavor_a",
+      "label": "Flavor A — lárgate",
+      "x": 2,
+      "y": 4,
+      "kind": "npc"
+    },
+    {
+      "id": "flavor_b",
+      "label": "Flavor B — lárgate",
+      "x": 19,
+      "y": 11,
+      "kind": "npc"
+    },
+    {
+      "id": "art_a",
+      "label": "Artefacto A (inútil)",
+      "x": 2,
+      "y": 13,
+      "kind": "item"
+    },
+    {
+      "id": "art_b",
+      "label": "Artefacto B (sagrado Sala 2)",
+      "x": 20,
+      "y": 5,
+      "kind": "item"
+    },
+    {
+      "id": "door",
+      "label": "Puerta → Sala 2 (tras Sello 1)",
+      "x": 9,
+      "y": 1,
+      "kind": "door"
+    }
+  ]
+}
